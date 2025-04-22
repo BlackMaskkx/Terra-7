@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terra-7 | IA Avanzada</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar (Historial de chats) -->
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <button id="new-chat-btn">
+                    <i class="fas fa-plus"></i> Nuevo chat
+                </button>
+            </div>
+            <div class="chat-history" id="chat-history">
+                <!-- Los chats pasados aparecerán aquí -->
+            </div>
+            <div class="sidebar-footer">
+                <div class="user-profile">
+                    <img src="https://via.placeholder.com/40" alt="Usuario">
+                    <span>Usuario</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Chat Area -->
+        <div class="main-content">
+            <div class="chat-container" id="chat-container">
+                <!-- Mensajes de la IA y usuario -->
+                <div class="message ia-message">
+                    <div class="message-avatar">
+                        <img src="https://via.placeholder.com/30" alt="Terra-7">
+                    </div>
+                    <div class="message-content">
+                        <p>¡Hola! Soy <strong>Terra-7</strong>, tu IA avanzada. ¿En qué puedo ayudarte hoy?</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Input de chat -->
+            <div class="chat-input-container">
+                <form id="message-form">
+                    <input type="text" id="user-input" placeholder="Escribe tu mensaje..." autocomplete="off">
+                    <button type="submit" id="send-btn">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+
+            <!-- Footer -->
+            <div class="chat-footer">
+                <p>© 2025 Terra-7. All rights reserved</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
